@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLyft</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="nav conatiner">
+             <a href="index.html" class="logo">ShopLyft</a>
+             <ul class="flex items-center justify-center uppercase semibold">
+                <li>
+                    <a href="#" class="ab">Men</a>
+                    <ul class="dropdown">
+                        <li><a href="topwear.html">Topwear</a></li>
+                        <li><a href="Bottomwear.html">Bottom wear</a></li>
+                        <li><a href="Indianandfestive.html">Indian and festive wear</a></li>
+                        <li><a href="Footwear.html">Footwear</a></li>
+                        <li><a href="Innerwear.html">Innerwear and sleepwear</a></li>
+                        <li><a href="accesories.html">Accesories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Women</a>
+                    <ul class="dropdown">
+                        <li><a href="western.html">Western wear</a></li>
+                        <li><a href="indian.html">Indian and western wear</a></li>
+                        <li><a href="tops.html">Tops</a></li>
+                        <li><a href="sports.html">Sports and active wear</a></li>
+                        <li><a href="foot.html">Footwear</a></li>
+                        <li><a href="bottom.html">Bootom wear</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Kids</a>
+                    <ul class="dropdown">
+                        <li><a href="boys.html">Boys clothing</a></li>
+                        <li><a href="girls.html">Girls clothing</a></li>
+                        <li><a href="footkids.html">Footwear</a></li>
+                        <li><a href="toys.html">Toys</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Home and Living</a>
+                    <ul class="dropdown">
+                        <li><a href="bed.html">Bed linen and furnishing</a></li>
+                        <li><a href="florring.html">Florring</a></li>
+                        <li><a href="bath.html">Bath</a></li>
+                        <li><a href="lamps.html">Lamps and lighting</a></li>
+                        <li><a href="homedecor.html">Home and decore</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Beauty</a>
+                    <ul class="dropdown">
+                        <li><a href="makeup.html">Makeup</a></li>
+                        <li><a href="skincare.html">Skin care</a></li>
+                        <li><a href="haircare.html">Hair care</a></li>
+                        <li><a href="frag.html">Fragnance</a></li>
+                        <li><a href="babycare.html">Baby care</a></li>
+                    </ul>
+                </li>
+
+              </ul>
+              <a href="signup.html"><button id="signUpBtn" class="button is-dark is-normal" style="margin-right: -200px; margin-left: 20px;">Sign Up</button></a>
+              <a href="login1.html"><button class="button is-dark is-normal" style="margin-right: -160px; margin-left: 10px;" >Log in</button></a>
+
+             <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+             <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="img/a.jpg" alt="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">
+                                HRX
+                            </div>
+                            <div class="cart-price">Rs.2500</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class='bx bx-trash delete' id="delete-item"></i>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-pricw">Rs. 2500</div>
+                </div>
+                <button type="button" class="btn-buy">Buy now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+             </div>
+        </div>
+    </header>
+
+    <div class="containe">
+        <div class="swiper">
+        
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide4.jpg" alt=""></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            
+          </div>
+    </div>
+   
+    <section class="shop container">
+        <div data-aos="zoom-in">
+
+        <h2 class="deal-of-the-day">Deal of the day</h2>
+        </div>
+        <div class="shop-content">
+            <div class="product-box">
+               <img src="img/1.jpg" alt="" class="product-img">
+
+           </div>
+           <div class="product-box">
+               <img src="img/2.jpg" alt="" class="product-img">
+              
+           </div>
+           <div class="product-box">
+               <img src="img/3.jpg" alt="" class="product-img">
+               
+           </div>
+           <div class="product-box">
+               <img src="img/4.jpg" alt="" class="product-img">
+               
+           </div>
+           <div class="product-box">
+               <img src="img/5.jpg" alt="" class="product-img">
+               
+           </div>
+           <div class="product-box">
+               <img src="img/6.jpg" alt="" class="product-img">
+               
+           </div>
+        
+        <div class="product-box">
+            <img src="img/8.jpg" alt="" class="product-img">
+            
+        </div>
+        <div class="product-box">
+            <img src="img/9.jpg" alt="" class="product-img">
+            
+        </div>
+    
+    <div class="product-box">
+        <img src="img/10.jpg" alt="" class="product-img">
+    </div>
+ 
+    <div class="product-box">
+         <img src="img/11.jpg" alt="" class="product-img">
+    </div>
+    <div class="product-box">
+        <img src="img/13.jpg" alt="" class="product-img">
+    </div>
+ 
+    <div class="product-box">
+         <img src="img/14.jpg" alt="" class="product-img">
+    </div>
+ 
+ 
+    </div>
+    <div data-aos="zoom-in">
+      <h2 class="section-title">Deals on Top brands</h2>  
+    </div>
+<div class="shop-content">
+     <div class="product-box">
+        <img src="img/product1.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product2.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product3.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product4.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product5.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product6.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product7.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product8.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product9.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product10.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product11.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product12.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product13.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product14.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product15.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product16.jpg" alt="" class="product-img">
+        
+    </div><div class="product-box">
+        <img src="img/product17.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product18.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product19.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product20.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product21.jpg" alt="" class="product-img">
+        
+    </div>
+    <div class="product-box">
+        <img src="img/product22.jpg" alt="" class="product-img">
+        
+    </div>
+</div>
+    </section>
+    
+<!-- <div class="footer">
+    <div class="contain">
+    <div class="col">
+      <h1>Online shopping</h1>
+      <ul>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Kids</li>
+        <li>Home and living</li>
+        <li>Beauty</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Customer services</h1>
+      <ul>
+        <li>Contact us</li>
+        <li>FAQ</li>
+        <li>T&C</li>
+        <li>Terms of use</li>
+        <li>Track orders</li>
+        <li>Shipping</li>
+        <li>Cancellation</li>
+        <li>Return</li>
+        
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Accounts</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+     
+    <div class="col">
+      <h1>Experience ShopLyft app on mobile</h1>
+      <ul>
+        <img src="https://www.bing.com/images/search?view=detailV2&ccid=ZEBVsWiy&id=6834159408EC6C267AD436E84E9F8858DF9E372B&thid=OIP.ZEBVsWiyDBTXm1Z1mGJmxAHaCj&mediaurl=https%3a%2f%2fa.storyblok.com%2ff%2f84976%2f1080x373%2f1750943503%2fget-it-on-google-play.png&exph=373&expw=1080&q=get+it+on+play+store+png&simid=608049837721273003&FORM=IRPRST&ck=B9A177BEFB73B5BF2EC9F5D716CCA586&selectedIndex=11" alt="1">
+        <img src="https://www.bing.com/images/search?view=detailV2&ccid=yIA5QbF9&id=566F427715488B12FA8A5636BB05FFB24C2A2884&thid=OIP.yIA5QbF9AF6dKONpcVz8NwHaCe&mediaurl=https%3a%2f%2fwww.pocketanatomy.com%2fwp-content%2fuploads%2f2016%2f12%2fdownload-on-the-app-store-vector.png&exph=167&expw=499&q=get+it+on+app+store+png&simid=607986688809595877&FORM=IRPRST&ck=C50A54B3E58F4BBCE533D9DC4921423E&selectedIndex=23" alt="2">
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Support</h1>
+      <ul>
+        <li>Contact us</li>
+        <li>Web chat</li>
+        <li>Open ticket</li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1>Keep in touch</h1>
+      <ul>
+        <li><img src="https://www.bing.com/ck/a?!&&p=2199a42cc4be53d0JmltdHM9MTY3MDgwMzIwMCZpZ3VpZD0xZTJiOTU4OS1hZDFkLTZiYjItMjNmOS04NTQ1YWNhZjZhNWYmaW5zaWQ9NTU2MQ&ptn=3&hsh=3&fclid=1e2b9589-ad1d-6bb2-23f9-8545acaf6a5f&u=a1L2ltYWdlcy9zZWFyY2g_cT1JbnN0YWxvZ28mRk9STT1JUUZSQkEmaWQ9OTdFRjlCMzE5QUI0RDU1Qjg2REY0ODg4RDRGQ0RDODNDMjEwMTRBOA&ntb=1" width="32" style="width: 32px;"></li>
+        <li><img src="https://www.bing.com/ck/a?!&&p=4d9d4ec44da4bbfcJmltdHM9MTY3MDgwMzIwMCZpZ3VpZD0xZTJiOTU4OS1hZDFkLTZiYjItMjNmOS04NTQ1YWNhZjZhNWYmaW5zaWQ9NTU2MQ&ptn=3&hsh=3&fclid=1e2b9589-ad1d-6bb2-23f9-8545acaf6a5f&u=a1L2ltYWdlcy9zZWFyY2g_cT1GYiUyMExvZ28mRk9STT1JUUZSQkEmaWQ9ODUzMzhGMTY0QkNDMDhGQzA1Q0FFQTE0Njc4ODkwQTU4REMzQkNFQw&ntb=1" width="32" style="width: 32px;"></li>
+        <li><img src="https://www.bing.com/ck/a?!&&p=ff55f980a661b579JmltdHM9MTY3MDgwMzIwMCZpZ3VpZD0xZTJiOTU4OS1hZDFkLTZiYjItMjNmOS04NTQ1YWNhZjZhNWYmaW5zaWQ9NTU1Mg&ptn=3&hsh=3&fclid=1e2b9589-ad1d-6bb2-23f9-8545acaf6a5f&u=a1L2ltYWdlcy9zZWFyY2g_cT1MaW5rZWRJbiUyMExvZ28mRk9STT1JUUZSQkEmaWQ9MTBGNkJGNzQ4QjdDNjM3Njc4NkE3N0VBQjNFNzhBOUE3NkE1NjcxNg&ntb=1" width="32" style="width: 32px;"></li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+<footer>
+    <div class="footer-container">
+      <div class="left-col">
+        <img src="img/logo.png" alt="" class="logo">
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="rights-text">© 2021 Created By <b>Lakshay arora</b>  All Rights Reserved.</p>
+      </div>
+
+      <div class="right-col">
+        <h1>Our Newsletter</h1>
+        <div class="border"></div>
+        <p>Enter Your Email to get our news and updates.</p>
+        <form action="" class="newsletter-form">
+          <input type="text" class="txtb" placeholder="Enter Your Email">
+          <input type="submit" class="btn" value="submit">
+        </form>
+      </div>
+    </div>
+  </footer>
+ 
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', 
+        {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+
+</body>
+</html>

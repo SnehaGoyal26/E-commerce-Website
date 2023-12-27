@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLyft</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="nav conatiner">
+             <a href="index.html" class="logo">ShopLyft</a>
+             <ul class="flex items-center justify-center uppercase semibold">
+                <li>
+                    <a href="#" class="ab">Men</a>
+                    <ul class="dropdown">
+                        <li><a href="topwear.html">Topwear</a></li>
+                        <li><a href="Bottomwear.html">Bottom wear</a></li>
+                        <li><a href="Indianandfestive.html">Indian and festive wear</a></li>
+                        <li><a href="Footwear.html">Footwear</a></li>
+                        <li><a href="Innerwear.html">Innerwear and sleepwear</a></li>
+                        <li><a href="accesories.html">Accesories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Women</a>
+                    <ul class="dropdown">
+                        <li><a href="western.html">Western wear</a></li>
+                        <li><a href="indian.html">Indian and western wear</a></li>
+                        <li><a href="tops.html">Tops</a></li>
+                        <li><a href="sports.html">Sports and active wear</a></li>
+                        <li><a href="foot.html">Footwear</a></li>
+                        <li><a href="bottom.html">Bootom wear</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Kids</a>
+                    <ul class="dropdown">
+                        <li><a href="boys.html">Boys clothing</a></li>
+                        <li><a href="girls.html">Girls clothing</a></li>
+                        <li><a href="footkids.html">Footwear</a></li>
+                        <li><a href="toys.html">Toys</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Home and Living</a>
+                    <ul class="dropdown">
+                        <li><a href="bed.html">Bed linen and furnishing</a></li>
+                        <li><a href="florring.html">Florring</a></li>
+                        <li><a href="bath.html">Bath</a></li>
+                        <li><a href="lamps.html">Lamps and lighting</a></li>
+                        <li><a href="homedecor.html">Home and decore</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Beauty</a>
+                    <ul class="dropdown">
+                        <li><a href="makeup.html">Makeup</a></li>
+                        <li><a href="skincare.html">Skin care</a></li>
+                        <li><a href="haircare.html">Hair care</a></li>
+                        <li><a href="frag.html">Fragnance</a></li>
+                        <li><a href="babycare.html">Baby care</a></li>
+                    </ul>
+                </li>
+
+              </ul>
+              <button class="button is-dark is-normal" style="margin-right: -200px; margin-left: 20px;">Log in</button>
+              <button class="button is-dark is-normal" style="margin-right: -160px; margin-left: 20px;" >Sign in</button>
+
+              <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+              <div class="cart">
+                 <h2 class="cart-title">Your cart</h2>
+                 <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="img/a.jpg" alt="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">
+                                HRX
+                            </div>
+                            <div class="cart-price">Rs.2500</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class='bx bx-trash delete' id="delete-item"></i>
+                    </div>
+                 </div>
+                 <div class="total">
+                     <div class="total-title">Total</div>
+                     <div class="total-pricw">Rs. 2500</div>
+                 </div>
+                 <button type="button" class="btn-buy">Buy now</button>
+                 <i class='bx bx-x' id="close-cart"></i>
+              </div>
+        </div>
+    
+    </header>
+    <section class="shop container">
+      <h2 class="section-title">Men's Topwear</h2>  
+<div class="shop-content">
+    <div class="product-box">
+        <img src="img/men-top/f.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn turtle neck</h2>
+        <span class="price">Rs. 1399</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    
+    <div class="product-box">
+        <img src="img/men-top/d.jpg" alt="" class="product-img">
+        <h2 class="product-title">H&M sweatshirt</h2>
+        <span class="price">Rs. 799</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/b.jpg" alt="" class="product-img">
+        <h2 class="product-title">Highlander</h2>
+        <span class="price">Rs. 1549</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/c.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster shirt</h2>
+        <span class="price">Rs. 599</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/a.jpg" alt="" class="product-img">
+        <h2 class="product-title">HRX by hrithik roshan</h2>
+        <span class="price">Rs. 2199</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/e.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster jacket</h2>
+        <span class="price">Rs. 2299</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+   
+    <div class="product-box">
+        <img src="img/men-top/g.jpg" alt="" class="product-img">
+        <h2 class="product-title">Highlander sweatshirt</h2>
+        <span class="price">Rs. 879</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/h.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn jacket</h2>
+        <span class="price">Rs. 2399</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/i.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster denim jacket</h2>
+        <span class="price">Rs. 1310</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/j.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster sweater</h2>
+        <span class="price">Rs. 749</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/k.jpg" alt="" class="product-img">
+        <h2 class="product-title">Deathalon sweatshirt</h2>
+        <span class="price">Rs. 899</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/l.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn bomber</h2>
+        <span class="price">Rs. 1949</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/m.jpg" alt="" class="product-img">
+        <h2 class="product-title">Here&Now jacket</h2>
+        <span class="price">Rs. 1749</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/n.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn pullover</h2>
+        <span class="price">Rs. 1099</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/o.jpg" alt="" class="product-img">
+        <h2 class="product-title">Louis philippe</h2>
+        <span class="price">Rs. 3114</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/p.jpg" alt="" class="product-img">
+        <h2 class="product-title">H&M sweatshirt</h2>
+        <span class="price">Rs. 799</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/q.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster bomber</h2>
+        <span class="price">Rs. 1999</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/r.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster sweater</h2>
+        <span class="price">Rs. 1199</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/s.jpg" alt="" class="product-img">
+        <h2 class="product-title">Highlander sweatshirt</h2>
+        <span class="price">Rs. 719</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/t.jpg" alt="" class="product-img">
+        <h2 class="product-title">HRX sweatshirt</h2>
+        <span class="price">Rs. 1044</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/u.jpg" alt="" class="product-img">
+        <h2 class="product-title">HRX bomber jacket</h2>
+        <span class="price">Rs. 2199</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/v.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster sweatshirt</h2>
+        <span class="price">Rs. 879</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/w.jpg" alt="" class="product-img">
+        <h2 class="product-title">Louis Philippe jacket</h2>
+        <span class="price">Rs. 3559</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/x.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster bomber</h2>
+        <span class="price">Rs. 2349</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/y.jpg" alt="" class="product-img">
+        <h2 class="product-title">HRX by hrithik roshan</h2>
+        <span class="price">Rs. 2199</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/z.jpg" alt="" class="product-img">
+        <h2 class="product-title">Highlander</h2>
+        <span class="price">Rs. 1549</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/a1.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster shirt</h2>
+        <span class="price">Rs. 599</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/a2.jpg" alt="" class="product-img">
+        <h2 class="product-title">H&M sweatshirt</h2>
+        <span class="price">Rs. 799</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/a3.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster jacket</h2>
+        <span class="price">Rs. 2299</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/a4.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn turtle neck</h2>
+        <span class="price">Rs. 1399</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/a5.jpg" alt="" class="product-img">
+        <h2 class="product-title">Highlander sweatshirt</h2>
+        <span class="price">Rs. 879</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/h.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn jacket</h2>
+        <span class="price">Rs. 2399</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/i.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster denim jacket</h2>
+        <span class="price">Rs. 1310</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/j.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster sweater</h2>
+        <span class="price">Rs. 749</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/k.jpg" alt="" class="product-img">
+        <h2 class="product-title">Deathalon sweatshirt</h2>
+        <span class="price">Rs. 899</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/l.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn bomber</h2>
+        <span class="price">Rs. 1949</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/m.jpg" alt="" class="product-img">
+        <h2 class="product-title">Here&Now jacket</h2>
+        <span class="price">Rs. 1749</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/n.jpg" alt="" class="product-img">
+        <h2 class="product-title">Wrogn pullover</h2>
+        <span class="price">Rs. 1099</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/o.jpg" alt="" class="product-img">
+        <h2 class="product-title">Louis philippe</h2>
+        <span class="price">Rs. 3114</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/p.jpg" alt="" class="product-img">
+        <h2 class="product-title">H&M sweatshirt</h2>
+        <span class="price">Rs. 799</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/q.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster bomber</h2>
+        <span class="price">Rs. 1999</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/r.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster sweater</h2>
+        <span class="price">Rs. 1199</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/s.jpg" alt="" class="product-img">
+        <h2 class="product-title">Highlander sweatshirt</h2>
+        <span class="price">Rs. 719</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/t.jpg" alt="" class="product-img">
+        <h2 class="product-title">HRX sweatshirt</h2>
+        <span class="price">Rs. 1044</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/u.jpg" alt="" class="product-img">
+        <h2 class="product-title">HRX bomber jacket</h2>
+        <span class="price">Rs. 2199</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/v.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster sweatshirt</h2>
+        <span class="price">Rs. 879</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/w.jpg" alt="" class="product-img">
+        <h2 class="product-title">Louis Philippe jacket</h2>
+        <span class="price">Rs. 3559</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/men-top/x.jpg" alt="" class="product-img">
+        <h2 class="product-title">Roadster bomber</h2>
+        <span class="price">Rs. 2349</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    
+</div>
+    </section>
+    <script src="main.js"></script>
+
+</body>
+</html>

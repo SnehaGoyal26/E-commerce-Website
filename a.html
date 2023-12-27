@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login + Firebase Database</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="a.css">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header">Login register </h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Full name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+
+                        <input type="text" id="Phone_number" placeholder="Phone number">
+
+                        <div id="button_container">
+                            <button onclick="login()">Login</button>
+                            <button onclick="register()">Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDLAKNx6EZkaEBrlXF-XYZofD-EDn7972k",
+          authDomain: "shoplyft12.firebaseapp.com",
+          projectId: "shoplyft12",
+          storageBucket: "shoplyft12.appspot.com",
+          messagingSenderId: "715139773537",
+          appId: "1:715139773537:web:73640a65edc6a1de066620"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        //initalize variables
+        const auth=firebase.auth()
+        const database=firebase.database()
+
+        //register
+    function register(){
+            email = document.getElementById('email').value
+    password = document.getElementById('password').value
+    full_name = document.getElementById('full_name').value
+    phone_number = document.getElementById('Phone_number').value
+  
+    // Validate input fields
+    if (validate_email(email) == false || validate_password(password) == false) {
+      alert('Email or Password is Outta Line!!')
+      return
+      // Don't continue running the code
+    }
+    if (validate_field(full_name) == false || validate_field(phone_number) == false ) {
+      alert('One or More Extra Fields is Outta Line!!')
+      return
+    }
+   
+    // Move on with Auth
+    auth.createUserWithEmailAndPassword(email, password)
+    .then(function() {
+      // Declare user variable
+      var user = auth.currentUser
+  
+      // Add this user to Firebase Database
+      var database_ref = database.ref()
+  
+      // Create User data
+      var user_data = {
+        email : email,
+        full_name : full_name,
+        phone_number: phone_number,
+        last_login : Date.now()
+      }
+  
+      // Push to Firebase Database
+      database_ref.child('users/' + user.uid).set(user_data)
+  
+      // DOne
+      alert('User Created!!')
+    })
+    .catch(function(error) {
+      // Firebase will use this to alert of its errors
+      var error_code = error.code
+      var error_message = error.message
+  
+      alert(error_message)
+    })
+  }
+  
+  
+  
+  // Validate Functions
+  function validate_email(email) {
+    expression = /^[^@]+@\w+(\.\w+)+\w$/
+    if (expression.test(email) == true) {
+      // Email is good
+      return true
+    } else {
+      // Email is not good
+      return false
+    }
+  }
+  
+  function validate_password(password) {
+    // Firebase only accepts lengths greater than 6
+    if (password < 6) {
+      return false
+    } else {
+      return true
+    }
+  }
+  
+  function validate_field(field) {
+    if (field == null) {
+      return false
+    }
+  
+    if (field.length <= 0) {
+      return false
+    } else {
+      return true
+    }
+  }
+    </script>
+    <script src="a.js"></script>
+
+</html>

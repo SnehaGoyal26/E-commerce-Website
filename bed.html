@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLyft</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="nav conatiner">
+             <a href="index.html" class="logo">ShopLyft</a>
+             <ul class="flex items-center justify-center uppercase semibold">
+                <li>
+                    <a href="#" class="ab">Men</a>
+                    <ul class="dropdown">
+                        <li><a href="topwear.html">Topwear</a></li>
+                        <li><a href="Bottomwear.html">Bottom wear</a></li>
+                        <li><a href="Indianandfestive.html">Indian and festive wear</a></li>
+                        <li><a href="Footwear.html">Footwear</a></li>
+                        <li><a href="Innerwear.html">Innerwear and sleepwear</a></li>
+                        <li><a href="accesories.html">Accesories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Women</a>
+                    <ul class="dropdown">
+                        <li><a href="western.html">Western wear</a></li>
+                        <li><a href="indian.html">Indian and western wear</a></li>
+                        <li><a href="tops.html">Tops</a></li>
+                        <li><a href="sports.html">Sports and active wear</a></li>
+                        <li><a href="foot.html">Footwear</a></li>
+                        <li><a href="bottom.html">Bootom wear</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Kids</a>
+                    <ul class="dropdown">
+                        <li><a href="boys.html">Boys clothing</a></li>
+                        <li><a href="girls.html">Girls clothing</a></li>
+                        <li><a href="footkids.html">Footwear</a></li>
+                        <li><a href="toys.html">Toys</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Home and Living</a>
+                    <ul class="dropdown">
+                        <li><a href="bed.html">Bed linen and furnishing</a></li>
+                        <li><a href="florring.html">Florring</a></li>
+                        <li><a href="bath.html">Bath</a></li>
+                        <li><a href="lamps.html">Lamps and lighting</a></li>
+                        <li><a href="homedecor.html">Home and decore</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="ab">Beauty</a>
+                    <ul class="dropdown">
+                        <li><a href="makeup.html">Makeup</a></li>
+                        <li><a href="skincare.html">Skin care</a></li>
+                        <li><a href="haircare.html">Hair care</a></li>
+                        <li><a href="frag.html">Fragnance</a></li>
+                        <li><a href="babycare.html">Baby care</a></li>
+                    </ul>
+                </li>
+
+              </ul>
+              <button class="button is-dark is-normal" style="margin-right: -200px; margin-left: 20px;">Log in</button>
+              <button class="button is-dark is-normal" style="margin-right: -160px; margin-left: 20px;" >Sign in</button>
+
+             <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+             <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="img/a.jpg" alt="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">
+                                HRX
+                            </div>
+                            <div class="cart-price">25$</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class='bx bx-trash' id="delete-item"></i>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-pricw">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+             </div>
+        </div>
+    </header>    <section class="shop container">
+      <h2 class="section-title">Bed-decor products</h2>  
+<div class="shop-content">
+     <div class="product-box">
+        <img src="img/product1.jpg" alt="" class="product-img">
+        <h2 class="product-title">AEROREADY SHIRT</h2>
+        <span class="price">$25</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product2.jpg" alt="" class="product-img">
+        <h2 class="product-title">WIRLESS EARBUDS</h2>
+        <span class="price">$100</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product3.jpg" alt="" class="product-img">
+        <h2 class="product-title">HOODED PARKA</h2>
+        <span class="price">$45</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product4.jpg" alt="" class="product-img">
+        <h2 class="product-title">STRAW METAL BOTTLE</h2>
+        <span class="price">$16</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product5.jpg" alt="" class="product-img">
+        <h2 class="product-title">SILVER METAL SUNGLASSES</h2>
+        <span class="price">$39</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product6.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACK HAT</h2>
+        <span class="price">$13</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product7.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACKPACK</h2>
+        <span class="price">$43</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product8.jpg" alt="" class="product-img">
+        <h2 class="product-title">ULTRABOOST 22</h2>
+        <span class="price">$9</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product1.jpg" alt="" class="product-img">
+        <h2 class="product-title">AEROREADY SHIRT</h2>
+        <span class="price">$25</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product2.jpg" alt="" class="product-img">
+        <h2 class="product-title">WIRLESS EARBUDS</h2>
+        <span class="price">$100</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product3.jpg" alt="" class="product-img">
+        <h2 class="product-title">HOODED PARKA</h2>
+        <span class="price">$45</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product4.jpg" alt="" class="product-img">
+        <h2 class="product-title">STRAW METAL BOTTLE</h2>
+        <span class="price">$16</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product5.jpg" alt="" class="product-img">
+        <h2 class="product-title">SILVER METAL SUNGLASSES</h2>
+        <span class="price">$39</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product6.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACK HAT</h2>
+        <span class="price">$13</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product7.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACKPACK</h2>
+        <span class="price">$43</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product8.jpg" alt="" class="product-img">
+        <h2 class="product-title">ULTRABOOST 22</h2>
+        <span class="price">$9</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product1.jpg" alt="" class="product-img">
+        <h2 class="product-title">AEROREADY SHIRT</h2>
+        <span class="price">$25</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product2.jpg" alt="" class="product-img">
+        <h2 class="product-title">WIRLESS EARBUDS</h2>
+        <span class="price">$100</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product3.jpg" alt="" class="product-img">
+        <h2 class="product-title">HOODED PARKA</h2>
+        <span class="price">$45</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product4.jpg" alt="" class="product-img">
+        <h2 class="product-title">STRAW METAL BOTTLE</h2>
+        <span class="price">$16</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product5.jpg" alt="" class="product-img">
+        <h2 class="product-title">SILVER METAL SUNGLASSES</h2>
+        <span class="price">$39</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product6.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACK HAT</h2>
+        <span class="price">$13</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product7.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACKPACK</h2>
+        <span class="price">$43</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <div class="product-box">
+        <img src="img/product8.jpg" alt="" class="product-img">
+        <h2 class="product-title">ULTRABOOST 22</h2>
+        <span class="price">$9</span> 
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    
+</div>
+    </section>
+    <script src="main.js"></script>
+
+</body>
+</html>

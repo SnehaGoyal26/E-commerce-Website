@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="abc.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+<body>
+  
+  <header>
+    <div class="nav conatiner">
+         <a href="index.html" class="logo">ShopLyft</a>
+         <ul class="flex items-center justify-center uppercase semibold">
+            <li>
+                <a href="#" class="ab">Men</a>
+                <ul class="dropdown">
+                    <li><a href="topwear.html">Topwear</a></li>
+                    <li><a href="Bottomwear.html">Bottom wear</a></li>
+                    <li><a href="Indianandfestive.html">Indian and festive wear</a></li>
+                    <li><a href="Footwear.html">Footwear</a></li>
+                    <li><a href="Innerwear.html">Innerwear and sleepwear</a></li>
+                    <li><a href="accesories.html">Accesories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="ab">Women</a>
+                <ul class="dropdown">
+                    <li><a href="western.html">Western wear</a></li>
+                    <li><a href="indian.html">Indian and western wear</a></li>
+                    <li><a href="tops.html">Tops</a></li>
+                    <li><a href="sports.html">Sports and active wear</a></li>
+                    <li><a href="foot.html">Footwear</a></li>
+                    <li><a href="bottom.html">Bootom wear</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="ab">Kids</a>
+                <ul class="dropdown">
+                    <li><a href="boys.html">Boys clothing</a></li>
+                    <li><a href="girls.html">Girls clothing</a></li>
+                    <li><a href="footkids.html">Footwear</a></li>
+                    <li><a href="toys.html">Toys</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="ab">Home and Living</a>
+                <ul class="dropdown">
+                    <li><a href="bed.html">Bed linen and furnishing</a></li>
+                    <li><a href="florring.html">Florring</a></li>
+                    <li><a href="bath.html">Bath</a></li>
+                    <li><a href="lamps.html">Lamps and lighting</a></li>
+                    <li><a href="homedecor.html">Home and decore</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="ab">Beauty</a>
+                <ul class="dropdown">
+                    <li><a href="makeup.html">Makeup</a></li>
+                    <li><a href="skincare.html">Skin care</a></li>
+                    <li><a href="haircare.html">Hair care</a></li>
+                    <li><a href="frag.html">Fragnance</a></li>
+                    <li><a href="babycare.html">Baby care</a></li>
+                </ul>
+            </li>
+
+          </ul>
+          <a href="signup.html"><button id="signUpBtn" class="button is-dark is-normal" style="margin-right: -200px; margin-left: 20px;">Sign Up</button></a>
+          <button class="button is-dark is-normal" style="margin-right: -160px; margin-left: 20px;" >Log in</button>
+
+         <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+         <div class="cart">
+            <h2 class="cart-title">Your cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="img/a.jpg" alt="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">
+                            HRX
+                        </div>
+                        <div class="cart-price">25$</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class='bx bx-trash' id="delete-item"></i>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-pricw">$0</div>
+            </div>
+            <button type="button" class="btn-buy">Buy now</button>
+            <i class='bx bx-x' id="close-cart"></i>
+         </div>
+    </div>
+</header>
+    <div class="ab">
+    <div>
+    <input class="input is-info" id="emailaa" type="email" placeholder="Info input" style="width: 500px;">
+     </div>
+    <div>
+    <input class="input is-info" id="passworda" type="password" placeholder="Info input" style="width: 500px;">
+     </div>
+    <div>
+    <button class="button is-dark is-normal" id="signUpBtn"  style="margin-right: -160px; margin-left: 20px;" >Log in</button>
+     </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCHdiOq86tc2-_fvX86SL4JdcT6VuhrQ2I",
+          authDomain: "shoplyft-53a2f.firebaseapp.com",
+          projectId: "shoplyft-53a2f",
+          storageBucket: "shoplyft-53a2f.appspot.com",
+          messagingSenderId: "105425885915",
+          appId: "1:105425885915:web:58e2f2113d355bb7aacafe"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+
+        let signup = document.getElementById("signUpBtn");
+        signup.addEventListener('click',(e) => {
+            var email = document.getElementById("emailaa").value;
+            var password = document.getElementById("passworda").value;
+            createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    alert("asf");
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+    // ..
+  });
+        });
+      </script>
+</body>
+</html>
